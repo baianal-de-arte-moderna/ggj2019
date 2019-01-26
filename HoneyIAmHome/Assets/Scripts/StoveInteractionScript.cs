@@ -11,6 +11,6 @@ public class StoveInteractionScript : ObjectInteractionScript
 
     public override void InteractWithFireExtinguisher()
     {
-        Debug.Log("Interacting with the stove using the fire extinguisher!");
+        SolveIssue();
     }
 }
