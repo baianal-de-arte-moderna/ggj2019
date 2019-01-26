@@ -34,8 +34,8 @@ public abstract class ObjectGrabbingScript : MonoBehaviour
             this.joint = null;
         } else {
             this.joint = gameObject.AddComponent<FixedJoint>();
+            this.joint.connectedMassScale = 0.15f;
             this.joint.connectedBody = r;
-            this.joint.connectedMassScale = 0.25f;
         }
     }
 
