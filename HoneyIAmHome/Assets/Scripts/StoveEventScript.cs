@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class StoveEventScript : ObjectEventScript
 {
-    protected override void OnLevelUp(int level)
-    {
-        Debug.Log("Level Up!");
-    }
-
     protected override void OnGameOver()
     {
         Debug.Log("Game Over :c");
@@ -17,5 +12,10 @@ public class StoveEventScript : ObjectEventScript
     protected override void OnIssueSolved()
     {
         Debug.Log("Stove under control!");
+    }
+
+    protected override void OnLevelUp(int level)
+    {
+        Debug.Log("Level Up!");
     }
 }
