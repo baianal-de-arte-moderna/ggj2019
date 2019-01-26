@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 2699734957532149248}
   m_Layer: 0
   m_Name: LeftRoom
-  m_TagString: Untagged
+  m_TagString: LeftRoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -729,11 +729,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2699734957532149248}
     m_Modifications:
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -789,6 +784,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee15086363f5209459367939c7788049, type: 3}
 --- !u!4 &1188990135895219605 stripped
@@ -804,11 +804,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2699734957532149248}
     m_Modifications:
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall
-      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -863,6 +858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee15086363f5209459367939c7788049, type: 3}
@@ -954,11 +954,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2699734957532149248}
     m_Modifications:
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1014,6 +1009,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee15086363f5209459367939c7788049, type: 3}
 --- !u!4 &1188990137174353531 stripped
@@ -1029,11 +1029,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1097149771349169740}
     m_Modifications:
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall_Cover (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1103,6 +1098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall_Cover (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6632082836224091109, guid: ee15086363f5209459367939c7788049,
         type: 3}
@@ -1234,11 +1234,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1097149771349169740}
     m_Modifications:
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall_Cover (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1308,6 +1303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall_Cover (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6632082836224091109, guid: ee15086363f5209459367939c7788049,
         type: 3}
