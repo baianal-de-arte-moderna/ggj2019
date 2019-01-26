@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlantsEventsScript : ObjectEventScript
+public class MicrowaveEventScript : ObjectEventScript
 {
     protected override void OnGameOver()
     {
@@ -11,7 +11,7 @@ public class PlantsEventsScript : ObjectEventScript
 
     protected override void OnIssueSolved()
     {
-        Debug.Log("The plant is alive!");
+        Debug.Log("The microwave didn't explode!");
     }
 
     protected override void OnLevelUp(int level){
