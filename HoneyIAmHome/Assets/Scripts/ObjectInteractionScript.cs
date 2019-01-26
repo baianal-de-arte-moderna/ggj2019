@@ -23,11 +23,13 @@ public abstract class ObjectInteractionScript : MonoBehaviour
 
     protected void SolveIssue()
     {
-        StoveEventScript eventScript = GetComponent<StoveEventScript>();
+        ObjectEventScript eventScript = GetComponent<ObjectEventScript>();
         eventScript.SolveIssue();
     }
 
     abstract public void InteractByItself();
     
     abstract public void InteractWithFireExtinguisher();
+
+    abstract public void InteractWithToolbox();
 }

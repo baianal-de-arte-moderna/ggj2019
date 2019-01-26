@@ -121,8 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   maxLevel: 2
-  fixedCover: {fileID: 0}
-  brokenCover: {fileID: 0}
+  fixedCover: {fileID: 2798940275509195376}
+  brokenCover: {fileID: 3023485267880013275}
   doorAnimator: {fileID: 2492165587399959405}
 --- !u!114 &7881472254852040564
 MonoBehaviour:

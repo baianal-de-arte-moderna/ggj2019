@@ -17,7 +17,7 @@ public class WashingMachineEventScript : ObjectEventScript
     {
         fixedCover.enabled = true;
         brokenCover.enabled = false;
-        doorAnimator.SetTrigger("Fix");
+        doorAnimator.SetBool("isBroken", false);
     }
 
     protected override void OnLevelUp(int level)
@@ -31,7 +31,7 @@ public class WashingMachineEventScript : ObjectEventScript
             case 1:
                 fixedCover.enabled = false;
                 brokenCover.enabled = true;
-                doorAnimator.SetTrigger("Break");
+                doorAnimator.SetBool("isBroken", true);
                 break;
             case 2:
                 Debug.Log("BOOOM!");
