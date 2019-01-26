@@ -1,0 +1,27 @@
+fire_loop.ogg
+author: tc630
+source: https://freesound.org/people/tc630/sounds/47835/
+
+extinguisher_loop.ogg
+author: Iamgiorgio
+source: https://freesound.org/people/Iamgiorgio/sounds/371839/
+
+extinguisher_start.ogg
+author: Iamgiorgio
+source: https://freesound.org/people/Iamgiorgio/sounds/371839/
+
+washing_machine_broken_end.ogg (explosion on the end)
+author: JustInvoke
+source: https://freesound.org/people/JustInvoke/sounds/446121/
+
+door_opening.ogg
+author: rivernile7
+source: https://freesound.org/people/rivernile7/sounds/249573/
+
+door_closing.ogg
+author: rivernile7
+source: https://freesound.org/people/rivernile7/sounds/249573/
+
+phone_ring.ogg
+author: mycompasstv
+https://freesound.org/people/mycompasstv/sounds/456433/
