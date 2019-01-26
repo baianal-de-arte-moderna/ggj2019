@@ -4,25 +4,71 @@ using UnityEngine;
 
 public class PlayerInteractionScript : MonoBehaviour
 {
-    private InteractableObjectScript nearestInteractableObject;
+    private ObjectGrabbingScript nearestGrabbableObject;
+    private ObjectGrabbingScript grabbedObject;
+
+    private ObjectInteractionScript nearestInteractableObject;
 
     private void Update()
     {
-        if (Input.GetAxis("Interact") > 0f)
+        if (Input.anyKeyDown && Input.GetAxis("Grab") > 0f)
         {
-            if (nearestInteractableObject != null)
+            OnGrabPressed();
+        }
+        else if (Input.GetAxis("Interact") > 0f)
+        {
+            OnInteractPressed();
+        }
+    }
+
+    private void OnGrabPressed()
+    {
+        if (grabbedObject != null)
+        {
+            grabbedObject.transform.parent = transform.parent;
+            grabbedObject = null;
+        }
+        else if (nearestGrabbableObject != null)
+        {
+            grabbedObject = nearestGrabbableObject;
+            grabbedObject.transform.parent = transform;
+        }
+    }
+
+    private void OnInteractPressed()
+    {
+        if (nearestInteractableObject != null)
+        {
+            if (grabbedObject == null)
             {
-                nearestInteractableObject.Interact();
+                nearestInteractableObject.InteractByItself();
+            }
+            else
+            {
+                grabbedObject.InteractWith(nearestInteractableObject);
             }
         }
     }
 
-    public void OnInteractableObjectTriggerEnter(InteractableObjectScript interactableObject)
+    public void OnGrabbableObjectTriggerEnter(ObjectGrabbingScript grabbableObject)
+    {
+        nearestGrabbableObject = grabbableObject;
+    }
+
+    public void OnGrabbableObjectTriggerExit(ObjectGrabbingScript grabbableObject)
+    {
+        if (nearestGrabbableObject == grabbableObject)
+        {
+            nearestGrabbableObject = null;
+        }
+    }
+
+    public void OnInteractableObjectTriggerEnter(ObjectInteractionScript interactableObject)
     {
         nearestInteractableObject = interactableObject;
     }
 
-    public void OnInteractableObjectTriggerExit(InteractableObjectScript interactableObject)
+    public void OnInteractableObjectTriggerExit(ObjectInteractionScript interactableObject)
     {
         if (nearestInteractableObject == interactableObject)
         {

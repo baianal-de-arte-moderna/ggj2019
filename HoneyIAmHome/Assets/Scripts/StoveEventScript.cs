@@ -13,4 +13,9 @@ public class StoveEventScript : ObjectEventScript
     {
         Debug.Log("Game Over :c");
     }
+
+    protected override void OnIssueSolved()
+    {
+        Debug.Log("Stove under control!");
+    }
 }

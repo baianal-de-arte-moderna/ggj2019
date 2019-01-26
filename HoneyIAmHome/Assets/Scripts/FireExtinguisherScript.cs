@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireExtinguisherScript : InteractableObjectScript
+public class FireExtinguisherScript : ObjectGrabbingScript
 {
-    public override void Interact()
+    public override void InteractWith(ObjectInteractionScript interactableObject)
     {
-        Debug.Log("Fire extinguished!");
+        interactableObject.InteractWithFireExtinguisher();
     }
 }

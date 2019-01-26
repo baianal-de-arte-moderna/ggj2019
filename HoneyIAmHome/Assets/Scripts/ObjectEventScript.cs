@@ -32,7 +32,17 @@ public abstract class ObjectEventScript : MonoBehaviour
             OnGameOver();
         }
     }
+
+    public void SolveIssue()
+    {
+        timer = rdn.Next(50, 500);
+        level = 0;
+        OnIssueSolved();
+    }
+
     abstract protected void OnLevelUp(int level);
 
     abstract protected void OnGameOver();
+
+    abstract protected void OnIssueSolved();
 }
