@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class InteractableObjectScript : MonoBehaviour
+public abstract class ObjectGrabbingScript : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
         PlayerInteractionScript player = other.gameObject.GetComponent<PlayerInteractionScript>();
-        player.OnInteractableObjectTriggerEnter(this);
+        player.OnGrabbableObjectTriggerEnter(this);
     }
 
     private void OnTriggerExit(Collider other)
     {
         PlayerInteractionScript player = other.gameObject.GetComponent<PlayerInteractionScript>();
-        player.OnInteractableObjectTriggerExit(this);
+        player.OnGrabbableObjectTriggerExit(this);
     }
-
-    abstract public void Interact();
 }

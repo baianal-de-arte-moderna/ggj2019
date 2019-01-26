@@ -4,29 +4,36 @@ using UnityEngine;
 
 public class PlayerInteractionScript : MonoBehaviour
 {
-    private InteractableObjectScript nearestInteractableObject;
+    private ObjectGrabbingScript nearestGrabbableObject;
+    private ObjectGrabbingScript grabbedObject;
 
     private void Update()
     {
-        if (Input.GetAxis("Interact") > 0f)
+        if (Input.anyKeyDown && Input.GetAxis("Grab") > 0f)
         {
-            if (nearestInteractableObject != null)
+            if (grabbedObject != null)
             {
-                nearestInteractableObject.Interact();
+                grabbedObject.transform.parent = transform.parent;
+                grabbedObject = null;
+            }
+            else if (nearestGrabbableObject != null)
+            {
+                grabbedObject = nearestGrabbableObject;
+                grabbedObject.transform.parent = transform;
             }
         }
     }
 
-    public void OnInteractableObjectTriggerEnter(InteractableObjectScript interactableObject)
+    public void OnGrabbableObjectTriggerEnter(ObjectGrabbingScript grabbableObject)
     {
-        nearestInteractableObject = interactableObject;
+        nearestGrabbableObject = grabbableObject;
     }
 
-    public void OnInteractableObjectTriggerExit(InteractableObjectScript interactableObject)
+    public void OnGrabbableObjectTriggerExit(ObjectGrabbingScript grabbableObject)
     {
-        if (nearestInteractableObject == interactableObject)
+        if (nearestGrabbableObject == grabbableObject)
         {
-            nearestInteractableObject = null;
+            nearestGrabbableObject = null;
         }
     }
 }
