@@ -18,7 +18,7 @@ public class FollowPlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_transform.position = Vector3.Lerp(m_transform.position, Player.position + Offset, 0.1f);
+        m_transform.position = Vector3.Lerp(m_transform.position, Player.position + Offset, 0.2f);
         m_transform.LookAt(Player);
     }
 }
