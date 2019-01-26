@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class ObjectEventScript : MonoBehaviour
 {
-    private int timer;
+    private float timer;
     public int level;
     public int maxLevel;
     private System.Random rdn = new System.Random();
@@ -13,7 +13,7 @@ public abstract class ObjectEventScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timer = rdn.Next(50,500);
+        timer = (float) rdn.Next(5,25);
         level = 0;
         Debug.Log(timer);
     }
@@ -21,10 +21,9 @@ public abstract class ObjectEventScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer = timer-1;
-        //Debug.Log(timer);
-        if(timer == 0){
-            timer = rdn.Next(50,500);
+        timer -= Time.deltaTime;
+        if(timer <= 0f){
+            timer = (float) rdn.Next(10,25);
             level++;
             OnLevelUp(level);
         }
@@ -35,7 +34,7 @@ public abstract class ObjectEventScript : MonoBehaviour
 
     public void SolveIssue()
     {
-        timer = rdn.Next(50, 500);
+        timer = (float) rdn.Next(10,25);
         level = 0;
         OnIssueSolved();
     }

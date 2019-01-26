@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 65d2f407d84e12b4297657c484feef6b, type: 3}
+  - {fileID: 2100000, guid: b9b24400b69a1fa48a1b7eb4d5b082a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 1228597275166018742}
   - component: {fileID: 3395617377896757196}
   - component: {fileID: 4972908873598131055}
+  - component: {fileID: 1485341728}
   m_Layer: 0
   m_Name: LeftRoom_Floor
   m_TagString: Untagged
@@ -289,6 +290,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06991187, y: 0.14740379, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1485341728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884591443397357438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04d44e1ec152db4f90dfb7dce3d27da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Roof: {fileID: 1928688793468500063}
 --- !u!1 &2138508537548429840
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +465,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 2, z: 1.1}
+  m_Size: {x: 0.15, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3152669044086082645
 GameObject:
@@ -691,7 +705,7 @@ GameObject:
   - component: {fileID: 2699734957532149248}
   m_Layer: 0
   m_Name: LeftRoom
-  m_TagString: Untagged
+  m_TagString: LeftRoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -939,8 +953,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2264310370212670465, guid: 14544551b9190d54196e79f723768b2d,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7545018093865019923}
+    - target: {fileID: 8550022420972774015, guid: 14544551b9190d54196e79f723768b2d,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7545018093865019923}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14544551b9190d54196e79f723768b2d, type: 3}
+--- !u!95 &7545018093865019923 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7545018093552127817, guid: 14544551b9190d54196e79f723768b2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 917103962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2209842115136635975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2209842115981287709, guid: 14544551b9190d54196e79f723768b2d,
