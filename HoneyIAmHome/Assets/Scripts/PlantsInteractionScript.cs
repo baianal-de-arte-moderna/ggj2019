@@ -13,4 +13,9 @@ public class PlantsInteractionScript : ObjectInteractionScript
     {
         Debug.Log("The plant is dirty with fire extinguisher powder!");
     }
+
+    public override void InteractWithToolbox()
+    {
+
+    }
 }
