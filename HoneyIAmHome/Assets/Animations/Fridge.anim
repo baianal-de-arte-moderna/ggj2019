@@ -63,7 +63,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -83,7 +83,7 @@ AnimationClip:
       customType: 4
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3821025570
+      path: 203866152
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -220,7 +220,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -248,7 +248,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -276,7 +276,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -317,7 +317,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -327,7 +327,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -337,7 +337,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Kitchen_refrigerator_Freezer
+    path: Kitchen_refrigerator_Freezer_Hinge
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0
