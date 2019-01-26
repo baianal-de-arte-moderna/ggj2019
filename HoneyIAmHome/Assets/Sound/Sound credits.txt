@@ -25,3 +25,11 @@ source: https://freesound.org/people/rivernile7/sounds/249573/
 phone_ring.ogg
 author: mycompasstv
 https://freesound.org/people/mycompasstv/sounds/456433/
+
+refrigerator.ogg
+author: Filmscore
+source: https://freesound.org/people/Filmscore/sounds/339980/
+
+cold_wind.ogg
+author: cobratronik
+source: https://freesound.org/people/cobratronik/sounds/117136/
