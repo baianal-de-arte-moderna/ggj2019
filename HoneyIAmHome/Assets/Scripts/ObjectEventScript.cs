@@ -40,9 +40,9 @@ public abstract class ObjectEventScript : MonoBehaviour
         OnIssueSolved();
     }
 
-    abstract protected void OnLevelUp(int level);
-
     abstract protected void OnGameOver();
 
     abstract protected void OnIssueSolved();
+    
+    abstract protected void OnLevelUp(int level);
 }
