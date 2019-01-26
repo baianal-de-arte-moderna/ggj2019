@@ -26,12 +26,14 @@ public class PlayerInteractionScript : MonoBehaviour
         if (grabbedObject != null)
         {
             grabbedObject.transform.parent = transform.parent;
+            grabbedObject.AttachTo(null);
             grabbedObject = null;
         }
         else if (nearestGrabbableObject != null)
         {
             grabbedObject = nearestGrabbableObject;
             grabbedObject.transform.parent = transform;
+            grabbedObject.AttachTo(GetComponent<Rigidbody>());
         }
     }
 
