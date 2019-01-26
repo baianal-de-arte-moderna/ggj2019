@@ -352,7 +352,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 2, z: 1.1}
+  m_Size: {x: 0.15, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6079346416780138113
 GameObject:
@@ -639,6 +639,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7761943429200535800}
     m_Modifications:
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall_Cover (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -709,11 +714,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.010000002
       objectReference: {fileID: 0}
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall_Cover (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 6632082836224091109, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -769,6 +769,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3055092898796202270}
     m_Modifications:
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -824,11 +829,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee15086363f5209459367939c7788049, type: 3}
 --- !u!4 &3228129041817819571 stripped
@@ -844,6 +844,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3055092898796202270}
     m_Modifications:
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -899,11 +904,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee15086363f5209459367939c7788049, type: 3}
 --- !u!4 &6067447154048314564 stripped
@@ -919,6 +919,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3055092898796202270}
     m_Modifications:
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -974,11 +979,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall (4)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee15086363f5209459367939c7788049, type: 3}
 --- !u!4 &8722224340226307414 stripped
@@ -994,6 +994,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7761943429200535800}
     m_Modifications:
+    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
+        type: 3}
+      propertyPath: m_Name
+      value: WindowSmall_Cover (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 1188990135954391242, guid: ee15086363f5209459367939c7788049,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1063,11 +1068,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 7663104076538420225, guid: ee15086363f5209459367939c7788049,
-        type: 3}
-      propertyPath: m_Name
-      value: WindowSmall_Cover (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6632082836224091109, guid: ee15086363f5209459367939c7788049,
         type: 3}
