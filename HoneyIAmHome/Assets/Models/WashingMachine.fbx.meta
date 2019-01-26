@@ -6,17 +6,37 @@ ModelImporter:
     100000: Lamp
     100002: //RootNode
     100004: WashingMachine
+    100006: WashingMachine_Boddy
+    100008: WashinMachine_BrokenCover
+    100010: WashinMachine_Door
+    100012: WashinMachine_FixedCover
     400000: Lamp
     400002: //RootNode
     400004: WashingMachine
+    400006: WashingMachine_Boddy
+    400008: WashinMachine_BrokenCover
+    400010: WashinMachine_Door
+    400012: WashinMachine_FixedCover
     2100000: No Name
     2100002: WashingMachineMAterial
     2300000: WashingMachine
     2300002: //RootNode
+    2300004: WashingMachine_Boddy
+    2300006: WashinMachine_BrokenCover
+    2300008: WashinMachine_Door
+    2300010: WashinMachine_FixedCover
     3300000: WashingMachine
     3300002: //RootNode
+    3300004: WashingMachine_Boddy
+    3300006: WashinMachine_BrokenCover
+    3300008: WashinMachine_Door
+    3300010: WashinMachine_FixedCover
     4300000: WashingMachine
     4300002: MaquinaLavar
+    4300004: WashinMachine_BrokenCover
+    4300006: WashinMachine_Door
+    4300008: WashinMachine_FixedCover
+    4300010: WashingMachine_Boddy
     10800000: Lamp
   externalObjects: {}
   materials:
