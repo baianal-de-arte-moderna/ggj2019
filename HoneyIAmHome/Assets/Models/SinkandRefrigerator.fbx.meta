@@ -1,24 +1,32 @@
 fileFormatVersion: 2
-guid: 5d1ba02c581bb704dad5bc1a078bb203
+guid: 0a05a4c76b46e47d48e3ea338e4106d9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Kitchen_refrigerator_Door
-    100004: Kitchen_refrigerator_Freezer
-    400000: //RootNode
-    400002: Kitchen_refrigerator_Door
-    400004: Kitchen_refrigerator_Freezer
+    100000: Kitchen_Balcony_stone
+    100002: Kitchen_refrigerator_Body
+    100004: Kitchen_refrigerator_Door
+    100006: Kitchen_refrigerator_Freezer
+    100008: //RootNode
+    400000: Kitchen_Balcony_stone
+    400002: Kitchen_refrigerator_Body
+    400004: Kitchen_refrigerator_Door
+    400006: Kitchen_refrigerator_Freezer
+    400008: //RootNode
     2100000: Material.001
-    2300000: //RootNode
-    2300002: Kitchen_refrigerator_Door
-    2300004: Kitchen_refrigerator_Freezer
-    3300000: //RootNode
-    3300002: Kitchen_refrigerator_Door
-    3300004: Kitchen_refrigerator_Freezer
+    2100002: No Name
+    2300000: Kitchen_Balcony_stone
+    2300002: Kitchen_refrigerator_Body
+    2300004: Kitchen_refrigerator_Door
+    2300006: Kitchen_refrigerator_Freezer
+    3300000: Kitchen_Balcony_stone
+    3300002: Kitchen_refrigerator_Body
+    3300004: Kitchen_refrigerator_Door
+    3300006: Kitchen_refrigerator_Freezer
     4300000: Kitchen_refrigerator_Body
     4300002: Kitchen_refrigerator_Door
     4300004: Kitchen_refrigerator_Freezer
+    4300006: Kitchen_Balcony_stone
   externalObjects: {}
   materials:
     importMaterials: 1
