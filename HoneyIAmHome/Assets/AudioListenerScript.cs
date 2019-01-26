@@ -7,16 +7,15 @@ public class AudioListenerScript : MonoBehaviour
 {
     public AudioMixer mixer;
     public Transform Player;
-    public Transform WashingMachine;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public string[] AudioParams;
+    public Transform[] Appliances;
 
     // Update is called once per frame
     void Update()
     {
-        mixer.SetFloat("WashMachVol", Vector3.Distance(WashingMachine.position, Player.position) * -1);
+        for (var i = 0; i < AudioParams.Length; i++) {
+            mixer.SetFloat(AudioParams[i], Vector3.Distance(Appliances[i].position, Player.position) * -1);
+        }        
     }
 }

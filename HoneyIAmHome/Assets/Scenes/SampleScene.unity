@@ -707,6 +707,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1862967965, guid: a6c5a124e32676b47b8bd80a77b8c232, type: 3}
+      propertyPath: Pan2D
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6c5a124e32676b47b8bd80a77b8c232, type: 3}
 --- !u!4 &967528158 stripped
@@ -784,7 +788,7 @@ PrefabInstance:
     - target: {fileID: 3055092898796202270, guid: 1287c1c2489992d4db479e1211f16122,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3055092898796202270, guid: 1287c1c2489992d4db479e1211f16122,
         type: 3}
@@ -1528,9 +1532,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: AudioParams.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: Appliances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
       propertyPath: WashingMachine
       value: 
       objectReference: {fileID: 1862967964}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: Appliances.Array.data[0]
+      value: 
+      objectReference: {fileID: 1862967964}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: AudioParams.Array.data[0]
+      value: WashMachVol
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
 --- !u!1001 &3411115358518961991
