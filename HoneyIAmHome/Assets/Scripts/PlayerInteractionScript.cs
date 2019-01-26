@@ -7,19 +7,45 @@ public class PlayerInteractionScript : MonoBehaviour
     private ObjectGrabbingScript nearestGrabbableObject;
     private ObjectGrabbingScript grabbedObject;
 
+    private ObjectInteractionScript nearestInteractableObject;
+
     private void Update()
     {
         if (Input.anyKeyDown && Input.GetAxis("Grab") > 0f)
         {
-            if (grabbedObject != null)
+            OnGrabPressed();
+        }
+        else if (Input.GetAxis("Interact") > 0f)
+        {
+            OnInteractPressed();
+        }
+    }
+
+    private void OnGrabPressed()
+    {
+        if (grabbedObject != null)
+        {
+            grabbedObject.transform.parent = transform.parent;
+            grabbedObject = null;
+        }
+        else if (nearestGrabbableObject != null)
+        {
+            grabbedObject = nearestGrabbableObject;
+            grabbedObject.transform.parent = transform;
+        }
+    }
+
+    private void OnInteractPressed()
+    {
+        if (nearestInteractableObject != null)
+        {
+            if (grabbedObject == null)
             {
-                grabbedObject.transform.parent = transform.parent;
-                grabbedObject = null;
+                nearestInteractableObject.InteractByItself();
             }
-            else if (nearestGrabbableObject != null)
+            else
             {
-                grabbedObject = nearestGrabbableObject;
-                grabbedObject.transform.parent = transform;
+                grabbedObject.InteractWith(nearestInteractableObject);
             }
         }
     }
@@ -34,6 +60,19 @@ public class PlayerInteractionScript : MonoBehaviour
         if (nearestGrabbableObject == grabbableObject)
         {
             nearestGrabbableObject = null;
+        }
+    }
+
+    public void OnInteractableObjectTriggerEnter(ObjectInteractionScript interactableObject)
+    {
+        nearestInteractableObject = interactableObject;
+    }
+
+    public void OnInteractableObjectTriggerExit(ObjectInteractionScript interactableObject)
+    {
+        if (nearestInteractableObject == interactableObject)
+        {
+            nearestInteractableObject = null;
         }
     }
 }

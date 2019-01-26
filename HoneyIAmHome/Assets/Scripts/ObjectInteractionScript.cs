@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public abstract class ObjectGrabbingScript : MonoBehaviour
+public abstract class ObjectInteractionScript : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
         PlayerInteractionScript player = other.gameObject.GetComponent<PlayerInteractionScript>();
         if (player)
-        {
-            player.OnGrabbableObjectTriggerEnter(this);
+        { 
+            player.OnInteractableObjectTriggerEnter(this);
         }
     }
 
@@ -18,9 +17,11 @@ public abstract class ObjectGrabbingScript : MonoBehaviour
         PlayerInteractionScript player = other.gameObject.GetComponent<PlayerInteractionScript>();
         if (player)
         {
-            player.OnGrabbableObjectTriggerExit(this);
+            player.OnInteractableObjectTriggerExit(this);
         }
     }
 
-    abstract public void InteractWith(ObjectInteractionScript interactableObject);
+    abstract public void InteractByItself();
+    
+    abstract public void InteractWithFireExtinguisher();
 }
