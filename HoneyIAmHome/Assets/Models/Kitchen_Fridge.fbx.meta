@@ -6,6 +6,7 @@ ModelImporter:
     100000: //RootNode
     100002: Kitchen_refrigerator_Door
     100004: Kitchen_refrigerator_Freezer
+    400000: //RootNode
     400002: Kitchen_refrigerator_Door
     400004: Kitchen_refrigerator_Freezer
     2100000: Material.001
