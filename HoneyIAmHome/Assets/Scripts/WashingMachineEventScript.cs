@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class WashingMachineEventScript : ObjectEventScript
 {
-    public MeshRenderer fixedCover;
-    public MeshRenderer brokenCover;
     public Animator doorAnimator;
-    
+
     [Header("Audio Clips")]
     public AudioClip Normal;
     public AudioClip Broken;
@@ -22,8 +20,6 @@ public class WashingMachineEventScript : ObjectEventScript
 
     protected override void OnIssueSolved()
     {
-        fixedCover.enabled = true;
-        brokenCover.enabled = false;
         ASource.Stop();
         doorAnimator.SetBool("isBroken", false);
     }
@@ -32,17 +28,12 @@ public class WashingMachineEventScript : ObjectEventScript
     {
         switch (level)
         {
-            case 0:
-                fixedCover.enabled = true;
-                brokenCover.enabled = false;
-                break;
             case 1:
                 ASource.clip = Normal;
                 ASource.Play();
+                doorAnimator.SetBool("isBroken", false);
                 break;
             case 2:
-                fixedCover.enabled = false;
-                brokenCover.enabled = true;
                 ASource.clip = Broken;
                 ASource.Play();
                 doorAnimator.SetBool("isBroken", true);
