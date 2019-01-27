@@ -151,7 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: de120b81926a07a448d9fb7f8c66ac9f, type: 2}
   Player: {fileID: 1439734677}
-  WashingMachine: {fileID: 0}
+  AudioParams:
+  - WashMachVol
+  Appliances:
+  - {fileID: 0}
 --- !u!1 &1969735530907524132
 GameObject:
   m_ObjectHideFlags: 0

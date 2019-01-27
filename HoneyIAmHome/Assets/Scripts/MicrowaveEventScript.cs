@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,8 @@ public class MicrowaveEventScript : ObjectEventScript
         Debug.Log("The microwave didn't explode!");
     }
 
-    protected override void OnLevelUp(int level){
+    protected override void OnLevelUp(int level)
+    {
         Debug.Log("level up!");
     }
 }

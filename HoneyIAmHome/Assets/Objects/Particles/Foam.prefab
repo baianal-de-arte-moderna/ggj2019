@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3252081737175102729}
   - component: {fileID: 3252081737175102734}
   m_Layer: 0
-  m_Name: Foam
+  m_Name: Foam 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3252081737175102735}
   m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 4.51, y: 2.13, z: 13.404728}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1360,8 +1360,8 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
-    enabled: 0
-    mode: 0
+    enabled: 1
+    mode: 1
     timeMode: 0
     fps: 30
     frameOverTime:
@@ -1479,7 +1479,14 @@ ParticleSystem:
     uvChannelMask: -1
     randomRow: 1
     sprites:
-    - sprite: {fileID: 0}
+    - sprite: {fileID: 21300016, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300018, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300020, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300022, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300024, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300026, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300028, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
+    - sprite: {fileID: 21300030, guid: 6df565d73455c9549a1e7569ff7fd03b, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4654,8 +4661,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 91c1de23877de1c45975b91d87e90881, type: 2}
+  - {fileID: 2100000, guid: 91c1de23877de1c45975b91d87e90881, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

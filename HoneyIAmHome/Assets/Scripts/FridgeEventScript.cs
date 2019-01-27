@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,8 +20,6 @@ public class FridgeEventScript : ObjectEventScript
     {
         switch (level)
         {
-            case 0:
-                break;
             case 1:
                 doorAnimator.SetBool("isBroken", true);
                 break;

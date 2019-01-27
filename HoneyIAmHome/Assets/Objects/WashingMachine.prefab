@@ -120,10 +120,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
-  maxLevel: 2
+  maxLevel: 3
   fixedCover: {fileID: 2798940275509195376}
   brokenCover: {fileID: 3023485267880013275}
   doorAnimator: {fileID: 2492165587399959405}
+  Normal: {fileID: 8300000, guid: f631e41c9b647d848abdad38d597fb0a, type: 3}
+  Broken: {fileID: 8300000, guid: fb850c52d42f3cd4ebabcb84dc5ea76e, type: 3}
+  Explode: {fileID: 8300000, guid: f335d86e680f8754a92ec10f26b8a934, type: 3}
+  ASource: {fileID: 1862967965}
 --- !u!114 &7881472254852040564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +402,7 @@ GameObject:
   - component: {fileID: 4871997937754851349}
   - component: {fileID: 2492165587399959405}
   - component: {fileID: 1862967965}
+  - component: {fileID: 856745104}
   m_Layer: 0
   m_Name: WashingMachine
   m_TagString: Untagged
@@ -414,7 +419,7 @@ Transform:
   m_GameObject: {fileID: 6888945321157450209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.79287, y: 0.79287, z: 0.79287}
   m_Children:
   - {fileID: 5031377649041928991}
   - {fileID: 4548819308550415732}
@@ -454,8 +459,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243478230675490142, guid: de120b81926a07a448d9fb7f8c66ac9f,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: fb850c52d42f3cd4ebabcb84dc5ea76e, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: f631e41c9b647d848abdad38d597fb0a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -540,6 +545,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &856745104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888945321157450209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9082aa3376aadf489791f17b2a52678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicator: {fileID: 0}
 --- !u!1 &7003188495249590163
 GameObject:
   m_ObjectHideFlags: 0
