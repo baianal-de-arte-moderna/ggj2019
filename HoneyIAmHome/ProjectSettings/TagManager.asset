@@ -7,6 +7,7 @@ TagManager:
   - RightRoom
   - LeftRoom
   - MainRoom
+  - GameOver
   layers:
   - Default
   - TransparentFX
