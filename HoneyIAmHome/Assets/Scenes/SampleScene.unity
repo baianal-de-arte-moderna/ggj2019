@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -215,12 +215,13 @@ AudioSource:
   m_GameObject: {fileID: 254655546}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  OutputAudioMixerGroup: {fileID: 243213148397753166, guid: de120b81926a07a448d9fb7f8c66ac9f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: dd321ad6d1f665a408e768740d6cda3e, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -302,6 +303,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &254655550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3604861307414311953, guid: fef0789bf91644bcfb6b59277a9f9b48,
+    type: 3}
+  m_PrefabInstance: {fileID: 3604861307420158604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &438364381 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3790573199755096097, guid: b12a878d5eb009c41817d884170fd0d1,
@@ -545,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appliances:
-  - {fileID: 82262718}
+  - {fileID: 254655546}
   minimumIdleTimer: 1
   maximumIdleTimer: 1
   minimumApplianceTimer: 10
@@ -1557,17 +1564,17 @@ PrefabInstance:
     - target: {fileID: 603999365872917451, guid: e0070116f3c5a4fb08f2dfb632c9cf8d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.62
+      value: 8.93
       objectReference: {fileID: 0}
     - target: {fileID: 603999365872917451, guid: e0070116f3c5a4fb08f2dfb632c9cf8d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.29
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 603999365872917451, guid: e0070116f3c5a4fb08f2dfb632c9cf8d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.42
+      value: -3.94
       objectReference: {fileID: 0}
     - target: {fileID: 603999365872917451, guid: e0070116f3c5a4fb08f2dfb632c9cf8d,
         type: 3}
@@ -1692,10 +1699,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1439734677, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 4756852603174374671, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1752,6 +1755,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: AudioParams.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: Appliances.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
       propertyPath: Appliances.Array.data[0]
       value: 
       objectReference: {fileID: 1862967964}
@@ -1763,11 +1774,14 @@ PrefabInstance:
       propertyPath: Appliances.Array.data[2]
       value: 
       objectReference: {fileID: 1635110262247992703}
-    - target: {fileID: 747748919120332097, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: AudioParams.Array.data[3]
+      value: FridgeVol
       objectReference: {fileID: 0}
+    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
+      propertyPath: Appliances.Array.data[3]
+      value: 
+      objectReference: {fileID: 254655550}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
 --- !u!1001 &3448141859868839854
@@ -1910,6 +1924,21 @@ PrefabInstance:
       propertyPath: indicator
       value: 
       objectReference: {fileID: 1148818419}
+    - target: {fileID: 1820244675790489964, guid: fef0789bf91644bcfb6b59277a9f9b48,
+        type: 3}
+      propertyPath: FridgeLoop
+      value: 
+      objectReference: {fileID: 8300000, guid: dd321ad6d1f665a408e768740d6cda3e, type: 3}
+    - target: {fileID: 1820244675790489964, guid: fef0789bf91644bcfb6b59277a9f9b48,
+        type: 3}
+      propertyPath: IceAge
+      value: 
+      objectReference: {fileID: 8300000, guid: 080d724910e914c49805186255bbe4bd, type: 3}
+    - target: {fileID: 1820244675790489964, guid: fef0789bf91644bcfb6b59277a9f9b48,
+        type: 3}
+      propertyPath: ASource
+      value: 
+      objectReference: {fileID: 254655547}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fef0789bf91644bcfb6b59277a9f9b48, type: 3}
 --- !u!1001 &6475225455673761302
@@ -1996,7 +2025,7 @@ PrefabInstance:
     - target: {fileID: 8495484978260132127, guid: eef79fe9bfbbb43e4bc9787bb00c0b3a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.094
+      value: -13.37
       objectReference: {fileID: 0}
     - target: {fileID: 8495484978260132127, guid: eef79fe9bfbbb43e4bc9787bb00c0b3a,
         type: 3}
@@ -2006,7 +2035,7 @@ PrefabInstance:
     - target: {fileID: 8495484978260132127, guid: eef79fe9bfbbb43e4bc9787bb00c0b3a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0638099
+      value: 2.78
       objectReference: {fileID: 0}
     - target: {fileID: 8495484978260132127, guid: eef79fe9bfbbb43e4bc9787bb00c0b3a,
         type: 3}

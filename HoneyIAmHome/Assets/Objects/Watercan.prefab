@@ -40,8 +40,8 @@ Rigidbody:
   m_GameObject: {fileID: 8233922244038007350}
   serializedVersion: 2
   m_Mass: 2
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -58,8 +58,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.008790576, z: 0.02}
-  m_Center: {x: 0.0055412413, y: -0.0011538137, z: 2.910383e-10}
+  m_Size: {x: 0.014546165, y: 0.008790576, z: 0.0027422428}
+  m_Center: {x: 0.0056647873, y: -0.0011538139, z: 0.00007839583}
 --- !u!65 &2488671895867532422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -93,10 +93,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8233922244038166038}
     m_Modifications:
-    - target: {fileID: 1124880976986067475, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+    - target: {fileID: 5405126048489031481, guid: a3412db8b1e1ecb4a99e114c746ab41e,
         type: 3}
-      propertyPath: m_Name
-      value: WaterIrrigator
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
         type: 3}
@@ -153,10 +153,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5405126048489031481, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+    - target: {fileID: 1124880976986067475, guid: a3412db8b1e1ecb4a99e114c746ab41e,
         type: 3}
-      propertyPath: playOnAwake
-      value: 0
+      propertyPath: m_Name
+      value: WaterIrrigator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3412db8b1e1ecb4a99e114c746ab41e, type: 3}
@@ -220,6 +220,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: eeb3f02e22338417b8a036a1f1ba5ee8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eeb3f02e22338417b8a036a1f1ba5ee8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: eeb3f02e22338417b8a036a1f1ba5ee8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: eeb3f02e22338417b8a036a1f1ba5ee8, type: 3}
       propertyPath: m_Materials.Array.data[0]
