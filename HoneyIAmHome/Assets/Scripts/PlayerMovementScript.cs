@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovementScript : MonoBehaviour
@@ -21,13 +19,16 @@ public class PlayerMovementScript : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-        
-        if (moveVertical != 0f || moveHorizontal != 0f) {
+
+        if (moveVertical != 0f || moveHorizontal != 0f)
+        {
             Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
             rb.velocity = (movement.normalized * speed);
             m_transform.rotation = Quaternion.LookRotation(rb.velocity);
             animator.SetBool("Walk", true);
-        } else {
+        }
+        else
+        {
             animator.SetBool("Walk", false);
         }
     }
