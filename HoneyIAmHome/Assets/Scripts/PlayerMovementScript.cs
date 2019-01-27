@@ -24,7 +24,7 @@ public class PlayerMovementScript : MonoBehaviour
         
         if (moveVertical != 0f || moveHorizontal != 0f) {
             Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-            rb.velocity = (movement * speed);
+            rb.velocity = (movement.normalized * speed);
             m_transform.rotation = Quaternion.LookRotation(rb.velocity);
             animator.SetBool("Walk", true);
         } else {
