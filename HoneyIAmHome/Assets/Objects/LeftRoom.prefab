@@ -257,7 +257,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 65d2f407d84e12b4297657c484feef6b, type: 3}
+  - {fileID: 2100000, guid: 6ad9ee9829a4e914296b47f539fa02f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -665,7 +665,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7526082543251240382}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1195,7 +1195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 89bc120cfbcc42a469f530d96c2cb250, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.627347
+      value: 7.125
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 89bc120cfbcc42a469f530d96c2cb250, type: 3}
       propertyPath: m_LocalPosition.y
