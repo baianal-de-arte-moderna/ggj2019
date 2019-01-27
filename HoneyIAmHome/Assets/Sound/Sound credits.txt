@@ -55,3 +55,7 @@ walking_tile_5.ogg
 walking_tile_6.ogg
 author: slooshie_96
 source: https://freesound.org/people/Slooshie_96/sounds/408841/
+
+toolbox.ogg
+author: YourFriendJesse
+source: https://freesound.org/people/YourFriendJesse/sounds/131200/
