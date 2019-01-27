@@ -1,23 +1,23 @@
 fileFormatVersion: 2
-guid: aa17a852d62b4a24b9516099984ff855
+guid: 6df565d73455c9549a1e7569ff7fd03b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Smoke_SpriteSheet_0
-    21300002: Smoke_SpriteSheet_1
-    21300004: Smoke_SpriteSheet_2
-    21300006: Smoke_SpriteSheet_3
-    21300008: Smoke_SpriteSheet_4
-    21300010: Smoke_SpriteSheet_5
-    21300012: Smoke_SpriteSheet_6
-    21300014: Smoke_SpriteSheet_7
-    21300016: Smoke_SpriteSheet_8
-    21300018: Smoke_SpriteSheet_9
-    21300020: Smoke_SpriteSheet_10
-    21300022: Smoke_SpriteSheet_11
-    21300024: Smoke_SpriteSheet_12
-    21300026: Smoke_SpriteSheet_13
-    21300028: Smoke_SpriteSheet_14
-    21300030: Smoke_SpriteSheet_15
+    21300000: Foam_SpriteSheet2_0
+    21300002: Foam_SpriteSheet2_1
+    21300004: Foam_SpriteSheet2_2
+    21300006: Foam_SpriteSheet2_3
+    21300008: Foam_SpriteSheet2_4
+    21300010: Foam_SpriteSheet2_5
+    21300012: Foam_SpriteSheet2_6
+    21300014: Foam_SpriteSheet2_7
+    21300016: Foam_SpriteSheet_0
+    21300018: Foam_SpriteSheet_1
+    21300020: Foam_SpriteSheet_2
+    21300022: Foam_SpriteSheet_3
+    21300024: Foam_SpriteSheet_4
+    21300026: Foam_SpriteSheet_5
+    21300028: Foam_SpriteSheet_6
+    21300030: Foam_SpriteSheet_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -100,167 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f03724437e0434248800f27c8327dcd0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53d2e3c185fe9bb4bbd46da62c530627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf19b5f0c8dadc646ab3ab252449cdaf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8132b9b61a9e3b544892a232ebc4ef44
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a59211f150fc8d4f9d048166e42209c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19177e3bf3e7a214aa6eaae7f83d7e25
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fac19606efbdcc4fab5b8e1f39488a6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1aaec044bd46104ba2bdaa4359651e3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Smoke_SpriteSheet_8
+      name: Foam_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -274,13 +114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f62f362f7a6d89f4090cdf4c7475eda7
+      spriteID: d9955b9ecf9004e459eb7acd21e313cf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_9
+      name: Foam_SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 512
@@ -294,13 +134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e7e5b1f4a47996498151b003c66fcda
+      spriteID: 470989039c2913141af72b91aa9d9a19
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_10
+      name: Foam_SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -314,13 +154,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f4b3e65ff7b2194d9434708af6fcbbd
+      spriteID: ec09b02ddf0713041abc9ef70d7f6de3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_11
+      name: Foam_SpriteSheet_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -334,13 +174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31c046ebb5bce474d8d2bb526fd392a1
+      spriteID: 572ec2c13ab7b844a923bf8c30ba130d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_12
+      name: Foam_SpriteSheet_4
       rect:
         serializedVersion: 2
         x: 0
@@ -354,13 +194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c575706c4ca0ba34f9bfe8f423294455
+      spriteID: 3d9ad6a438f7f4d45bd3fe4e27120f8c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_13
+      name: Foam_SpriteSheet_5
       rect:
         serializedVersion: 2
         x: 512
@@ -374,13 +214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471c6207f4d27c24598c21eea51f0db5
+      spriteID: aaf52ffbc75dba24aa89c91181dc5145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_14
+      name: Foam_SpriteSheet_6
       rect:
         serializedVersion: 2
         x: 1024
@@ -394,13 +234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7617962618e857e49a98cb6d1f23f8e3
+      spriteID: 859e2b6a97a9d894f8038ea411f755ca
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Smoke_SpriteSheet_15
+      name: Foam_SpriteSheet_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -414,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 657732dbe1f21dc4a936477f3ff7b54f
+      spriteID: c712e935d2c8ba0439c437059b36bc31
       vertices: []
       indices: 
       edges: []
@@ -422,7 +262,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1f4456a954fede04c9e74afe0bba5861
+    spriteID: ddf7ff34a0b98924da6cc7560ade90b5
     vertices: []
     indices: 
     edges: []
