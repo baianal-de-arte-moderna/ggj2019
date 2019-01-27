@@ -16,6 +16,8 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: 0a7bf63596917c7499388004fb3b837c
+    name: StoveVol
   - guid: 1bf5520ec5c94aa45a181f139a8ac670
     name: WashMachVol
   m_AudioMixerGroupViews:
