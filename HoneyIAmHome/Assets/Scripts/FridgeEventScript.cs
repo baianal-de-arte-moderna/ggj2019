@@ -13,7 +13,7 @@ public class FridgeEventScript : ObjectEventScript
 
     protected override void OnIssueSolved()
     {
-        doorAnimator.SetBool("isBroken", false);
+        doorAnimator.SetInteger("level", 0);
     }
 
     protected override void OnLevelUp(int level)
@@ -21,9 +21,12 @@ public class FridgeEventScript : ObjectEventScript
         switch (level)
         {
             case 1:
-                doorAnimator.SetBool("isBroken", true);
+                doorAnimator.SetInteger("level", level);
                 break;
             case 2:
+                doorAnimator.SetInteger("level", level);
+                break;
+            case 3:
                 Debug.Log("ICE AGE!");
                 break;
         }

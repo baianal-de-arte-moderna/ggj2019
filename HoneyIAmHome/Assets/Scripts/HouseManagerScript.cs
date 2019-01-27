@@ -7,6 +7,14 @@ public class HouseManagerScript : MonoBehaviour
 {
     public List<GameObject> appliances;
 
+    [Header("Idle timer")]
+    public int minimumIdleTimer;
+    public int maximumIdleTimer;
+
+    [Header("Appliance timer")]
+    public int minimumApplianceTimer;
+    public int maximumApplianceTimer;
+
     private List<ObjectEventScript> applianceEventScripts;
     private System.Random random;
 
@@ -36,7 +44,7 @@ public class HouseManagerScript : MonoBehaviour
                 {
                     level++;
                 }
-                idleTimer = random.Next(5, 25);
+                ActivateIdleMode();
             }
         }
         else
@@ -51,7 +59,7 @@ public class HouseManagerScript : MonoBehaviour
 
     private void ActivateIdleMode()
     {
-        idleTimer = random.Next(5, 25);
+        idleTimer = random.Next(minimumIdleTimer, maximumIdleTimer);
         Debug.Log($"Stay in idle mode for {idleTimer} seconds");
     }
 
@@ -71,7 +79,7 @@ public class HouseManagerScript : MonoBehaviour
 
         foreach (ObjectEventScript selectedApplianceEventScript in selectedApplianceEventScripts)
         {
-            float randomLevelDuration = random.Next(5, 25);
+            float randomLevelDuration = random.Next(minimumApplianceTimer, maximumApplianceTimer);
             selectedApplianceEventScript.SetLevelDuration(randomLevelDuration);
 
             activeTimer = Math.Max(activeTimer, selectedApplianceEventScript.maxLevel * randomLevelDuration);
