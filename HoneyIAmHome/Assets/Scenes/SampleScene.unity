@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &82262718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6475225456940071678, guid: 703db37e62f0e4e70af8e5f0757685dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6475225455673761302}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,12 +382,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &569858543 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6737688979379622977, guid: 692818f0075dc43e0a142306779ecdb4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1653447447}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &569858547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7974139880822466237, guid: 692818f0075dc43e0a142306779ecdb4,
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appliances:
-  - {fileID: 569858543}
+  - {fileID: 82262718}
   minimumIdleTimer: 1
   maximumIdleTimer: 1
   minimumApplianceTimer: 10

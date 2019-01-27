@@ -32,7 +32,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.24, y: 2.41, z: -10.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7031131520382090773}
   m_Father: {fileID: 603999365872917451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -119,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb2c8049028746abb7bbe41062df4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  water: {fileID: 3204399923675205427}
 --- !u!54 &1317619325326399037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -166,3 +168,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5}
+--- !u!1001 &7456427439730018314
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2116504155573989875}
+    m_Modifications:
+    - target: {fileID: 1124880976986067475, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterIrrigator
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.258819
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659259
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405126048489031481, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a3412db8b1e1ecb4a99e114c746ab41e, type: 3}
+--- !u!4 &7031131520382090773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 497953000673277471, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7456427439730018314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3204399923675205427 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5405126048489031481, guid: a3412db8b1e1ecb4a99e114c746ab41e,
+    type: 3}
+  m_PrefabInstance: {fileID: 7456427439730018314}
+  m_PrefabAsset: {fileID: 0}
