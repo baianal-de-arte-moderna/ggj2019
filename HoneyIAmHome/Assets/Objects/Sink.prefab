@@ -106,7 +106,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.029364845, y: 0.01578434, z: 0.0145145925}
+  m_Size: {x: 0.029364845, y: 0.02, z: 0.0145145925}
   m_Center: {x: -0.00001944661, y: -0.0047437837, z: -0.0022395605}
 --- !u!114 &4516257776228980010
 MonoBehaviour:
@@ -197,11 +197,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WaterSink
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341588097181875264, guid: 7b5a67eea951b3846b8b2329c52d8920,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3401029073740394738, guid: 7b5a67eea951b3846b8b2329c52d8920,
         type: 3}
