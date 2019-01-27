@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100002, guid: 0a05a4c76b46e47d48e3ea338e4106d9, type: 3}
+  - {fileID: 2100000, guid: 312249f76c9d38741a7cb234ee9883e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,6 +145,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6475225456940071679}
   - component: {fileID: 4075242047795643292}
+  - component: {fileID: 82262719}
   m_Layer: 0
   m_Name: Sink
   m_TagString: Untagged
@@ -186,6 +187,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &82262719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6475225456940071678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9082aa3376aadf489791f17b2a52678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicator: {fileID: 0}
 --- !u!1001 &3668705718140338496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,11 +207,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6475225456209407381}
     m_Modifications:
-    - target: {fileID: 6341588097181875264, guid: 7b5a67eea951b3846b8b2329c52d8920,
-        type: 3}
-      propertyPath: m_Name
-      value: WaterSink
-      objectReference: {fileID: 0}
     - target: {fileID: 3401029073740394738, guid: 7b5a67eea951b3846b8b2329c52d8920,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -267,6 +276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341588097181875264, guid: 7b5a67eea951b3846b8b2329c52d8920,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterSink
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b5a67eea951b3846b8b2329c52d8920, type: 3}

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  Offset: {x: 0, y: 7.5, z: -4}
+  Offset: {x: 0, y: 7.5, z: -6}
 --- !u!82 &6307702407126841773
 AudioSource:
   m_ObjectHideFlags: 0

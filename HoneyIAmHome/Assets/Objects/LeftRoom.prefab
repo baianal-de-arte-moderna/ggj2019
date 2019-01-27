@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 3395617377896757196}
   - component: {fileID: 4972908873598131055}
   - component: {fileID: 1485341728}
+  - component: {fileID: 1652902178}
   m_Layer: 0
   m_Name: LeftRoom_Floor
   m_TagString: Untagged
@@ -303,6 +304,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Roof: {fileID: 1928688793468500063}
+--- !u!65 &1652902178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884591443397357438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06991187, y: 0.15115365, z: 0.026082432}
+  m_Center: {x: 0, y: -0.0018749958, z: 0.01598052}
 --- !u!1 &2138508537548429840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,9 +1097,9 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 4964269ee14f68c41ba28003e2f92e47, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14544551b9190d54196e79f723768b2d, type: 3}
---- !u!1 &6556180771430476489 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6556180771138555795, guid: 14544551b9190d54196e79f723768b2d,
+--- !u!4 &2209842115136635975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2209842115981287709, guid: 14544551b9190d54196e79f723768b2d,
     type: 3}
   m_PrefabInstance: {fileID: 917103962}
   m_PrefabAsset: {fileID: 0}
@@ -1095,9 +1109,9 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 917103962}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2209842115136635975 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2209842115981287709, guid: 14544551b9190d54196e79f723768b2d,
+--- !u!1 &6556180771430476489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6556180771138555795, guid: 14544551b9190d54196e79f723768b2d,
     type: 3}
   m_PrefabInstance: {fileID: 917103962}
   m_PrefabAsset: {fileID: 0}

@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 7283810508022957045}
   - component: {fileID: 5666872379562591145}
   - component: {fileID: 1588573558}
+  - component: {fileID: 476745156}
   m_Layer: 0
   m_Name: RightRoom_Floor
   m_TagString: Untagged
@@ -460,6 +461,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Roof: {fileID: 2583003334326920315}
+--- !u!65 &476745156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6079346416780138113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.06991187, y: 0.14740379, z: 0.03}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &6556180771250370077
 AudioSource:
   m_ObjectHideFlags: 0
@@ -474,7 +488,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0

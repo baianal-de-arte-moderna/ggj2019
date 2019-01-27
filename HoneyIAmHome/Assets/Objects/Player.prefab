@@ -142,7 +142,9 @@ MonoBehaviour:
   - WashMachVol
   - StoveVol
   - MicrowaveVol
+  - FridgeVol
   Appliances:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

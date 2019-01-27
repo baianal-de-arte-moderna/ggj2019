@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class UIIndicatorScript : MonoBehaviour
 {
     public Image indicator;
+    private Image internalIndicator;
     Vector3 MinPos;
     Vector3 MaxPos;
     ObjectEventScript EventScript;
@@ -11,6 +12,7 @@ public class UIIndicatorScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        internalIndicator = indicator.GetComponent<RectTransform>().GetChild(0).GetComponent<Image>();
         MinPos = Vector3.one * indicator.GetComponent<RectTransform>().sizeDelta.x;
         MaxPos = new Vector3(Screen.width - indicator.GetComponent<RectTransform>().sizeDelta.x, Screen.height - indicator.GetComponent<RectTransform>().sizeDelta.y, 0.0f);
         EventScript = GetComponentInChildren<ObjectEventScript>();
@@ -44,5 +46,7 @@ public class UIIndicatorScript : MonoBehaviour
             indicator.enabled = false;
             count = 0;
         }
+        internalIndicator.enabled = indicator.enabled;
+        internalIndicator.color = indicator.color;
     }
 }
