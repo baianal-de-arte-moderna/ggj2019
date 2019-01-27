@@ -37,3 +37,21 @@ source: https://freesound.org/people/cobratronik/sounds/117136/
 env.ogg
 author: mzui
 source: https://freesound.org/people/mzui/sounds/135066/
+
+walking_carpet_1.ogg
+walking_carpet_2.ogg
+walking_carpet_3.ogg
+walking_carpet_4.ogg
+walking_carpet_5.ogg
+walking_carpet_6.ogg
+author: vintage2005
+source: https://freesound.org/people/vintage2005/sounds/444618/
+
+walking_tile_1.ogg
+walking_tile_2.ogg
+walking_tile_3.ogg
+walking_tile_4.ogg
+walking_tile_5.ogg
+walking_tile_6.ogg
+author: slooshie_96
+source: https://freesound.org/people/Slooshie_96/sounds/408841/
