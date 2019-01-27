@@ -120,10 +120,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
-  maxLevel: 2
+  maxLevel: 3
   fixedCover: {fileID: 2798940275509195376}
   brokenCover: {fileID: 3023485267880013275}
   doorAnimator: {fileID: 2492165587399959405}
+  Normal: {fileID: 8300000, guid: f631e41c9b647d848abdad38d597fb0a, type: 3}
+  Broken: {fileID: 8300000, guid: fb850c52d42f3cd4ebabcb84dc5ea76e, type: 3}
+  Explode: {fileID: 8300000, guid: f335d86e680f8754a92ec10f26b8a934, type: 3}
+  ASource: {fileID: 1862967965}
 --- !u!114 &7881472254852040564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,8 +459,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243478230675490142, guid: de120b81926a07a448d9fb7f8c66ac9f,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: fb850c52d42f3cd4ebabcb84dc5ea76e, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: f631e41c9b647d848abdad38d597fb0a, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
