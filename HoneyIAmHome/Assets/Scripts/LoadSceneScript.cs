@@ -8,6 +8,16 @@ public class LoadSceneScript : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadGameOver()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
     public void Exit()
     {
         Application.Quit();

@@ -8,11 +8,14 @@ public abstract class ObjectEventScript : MonoBehaviour
     private float timer;
     private float levelDuration;
 
+    private EnterGameOverScript gameOverScript;
+
     // Start is called before the first frame update
     void Start()
     {
         level = 0;
         timer = 0;
+        gameOverScript = GameObject.FindGameObjectsWithTag("GameOver")[0].GetComponent<EnterGameOverScript>();
     }
 
     // Update is called once per frame
@@ -29,7 +32,7 @@ public abstract class ObjectEventScript : MonoBehaviour
 
             if (level == maxLevel)
             {
-                OnGameOver();
+                gameOverScript.enabled = true;
             }
         }
     }
