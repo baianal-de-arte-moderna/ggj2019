@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IrrigatorScript : ObjectGrabbingScript
+public class WatercanScript : ObjectGrabbingScript
 {
     public ParticleSystem water;
 
     public override void InteractWith(ObjectInteractionScript interactableObject)
     {
-        interactableObject.InteractWithIrrigator();
+        interactableObject.InteractWithWatercan();
     }
 
     public override void OnInteractionStart()

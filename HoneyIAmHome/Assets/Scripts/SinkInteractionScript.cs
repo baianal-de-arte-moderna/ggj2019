@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ public class SinkInteractionScript : ObjectInteractionScript
         Debug.Log("Interacting with the sink with the fire extinguisher!");
     }
 
-    public override void InteractWithIrrigator()
+    public override void InteractWithWatercan()
     {
         Debug.Log("Interacting with the sink with the irrigator!");
     }
