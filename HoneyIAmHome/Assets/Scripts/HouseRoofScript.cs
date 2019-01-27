@@ -18,7 +18,7 @@ public class HouseRoofScript : MonoBehaviour
         Roof.enabled = (Roof.material.color.a > 0.1f);
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
@@ -26,7 +26,7 @@ public class HouseRoofScript : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision col)
+    void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {

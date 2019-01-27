@@ -22,6 +22,10 @@ public class MusicManagerScript : MonoBehaviour
     void Update()
     {
         var nextClip = threatLevel.Where(t => t <= houseManager.GetCurrentThreatLevel()).Count() - 1;
+        if (nextClip >= songs.Length || nextClip < 0)
+        {
+            nextClip = 0;
+        }
         if (nextClip != currentClip)
         {
             currentClip = nextClip;
