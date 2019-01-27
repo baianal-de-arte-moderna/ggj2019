@@ -1883,6 +1883,21 @@ PrefabInstance:
       propertyPath: houseManager
       value: 
       objectReference: {fileID: 705817091}
+    - target: {fileID: 6307702407126841774, guid: 281ea3dfe68918244b9134f7a4089a9b,
+        type: 3}
+      propertyPath: field of view
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307702407126841774, guid: 281ea3dfe68918244b9134f7a4089a9b,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6307702407126841774, guid: 281ea3dfe68918244b9134f7a4089a9b,
+        type: 3}
+      propertyPath: m_FocalLength
+      value: 32.96973
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 281ea3dfe68918244b9134f7a4089a9b, type: 3}
 --- !u!1001 &6475225455673761302
