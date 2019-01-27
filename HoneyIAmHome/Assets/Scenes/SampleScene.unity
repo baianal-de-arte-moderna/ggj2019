@@ -1324,6 +1324,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8066915146085046306, guid: 13c834dec93f74579959741b2945fc83,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.9684243
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066915146085046306, guid: 13c834dec93f74579959741b2945fc83,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.000000074505806
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066915146085046306, guid: 13c834dec93f74579959741b2945fc83,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.008128405
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066915146085046306, guid: 13c834dec93f74579959741b2945fc83,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.000000074505806
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066915146085046306, guid: 13c834dec93f74579959741b2945fc83,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13c834dec93f74579959741b2945fc83, type: 3}
 --- !u!1001 &2442586305772176772
@@ -1611,18 +1636,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
-      propertyPath: AudioParams.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
-      propertyPath: Appliances.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
-      propertyPath: WashingMachine
-      value: 
-      objectReference: {fileID: 1862967964}
-    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
       propertyPath: Appliances.Array.data[0]
       value: 
       objectReference: {fileID: 1862967964}
@@ -1630,10 +1643,6 @@ PrefabInstance:
       propertyPath: Appliances.Array.data[1]
       value: 
       objectReference: {fileID: 2442586305772176775}
-    - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
-      propertyPath: AudioParams.Array.data[2]
-      value: MicrowaveVol
-      objectReference: {fileID: 0}
     - target: {fileID: 895644963, guid: 2f2596577f71bb843bf4f0bf3c6ccfe1, type: 3}
       propertyPath: Appliances.Array.data[2]
       value: 
