@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class ObjectGrabbingScript : MonoBehaviour
 {
     FixedJoint joint;
 
-    void Start() {
+    void Start()
+    {
         this.joint = null;
     }
 
@@ -27,12 +26,16 @@ public abstract class ObjectGrabbingScript : MonoBehaviour
             player.OnGrabbableObjectTriggerExit(this);
         }
     }
-    
-    public void AttachTo(Rigidbody r) {
-        if (r == null) {
+
+    public void AttachTo(Rigidbody r)
+    {
+        if (r == null)
+        {
             Destroy(this.joint);
             this.joint = null;
-        } else {
+        }
+        else
+        {
             this.joint = gameObject.AddComponent<FixedJoint>();
             this.joint.connectedMassScale = 0.15f;
             this.joint.connectedBody = r;

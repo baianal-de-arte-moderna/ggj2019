@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FireExtinguisherScript : ObjectGrabbingScript
 {
     public ParticleSystem foam;
+    public AudioSource aSource;
+    public AudioClip foamStart;
+    public AudioClip foamLoop;
 
     public override void InteractWith(ObjectInteractionScript interactableObject)
     {
@@ -14,14 +15,21 @@ public class FireExtinguisherScript : ObjectGrabbingScript
     public override void OnInteractionStart()
     {
         base.OnInteractionStart();
-        Debug.Log("Start foaming!");
+        aSource.Stop();
+        aSource.PlayOneShot(foamStart);
         foam.Play();
+        Invoke("StartAudioLoop", foamStart.length);
+    }
+
+    public void StartAudioLoop() {
+        if (!aSource.isPlaying) 
+            aSource.Play();
     }
 
     public override void OnInteractionEnd()
     {
         base.OnInteractionEnd();
-        Debug.Log("Stop foaming!");
+        aSource.Stop();
         foam.Stop();
     }
 }

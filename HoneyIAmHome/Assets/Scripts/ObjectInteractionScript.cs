@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public abstract class ObjectInteractionScript : MonoBehaviour
 {
@@ -7,7 +6,7 @@ public abstract class ObjectInteractionScript : MonoBehaviour
     {
         PlayerInteractionScript player = other.gameObject.GetComponent<PlayerInteractionScript>();
         if (player)
-        { 
+        {
             player.OnInteractableObjectTriggerEnter(this);
         }
     }
@@ -28,7 +27,7 @@ public abstract class ObjectInteractionScript : MonoBehaviour
     }
 
     abstract public void InteractByItself();
-    
+
     abstract public void InteractWithFireExtinguisher();
 
     abstract public void InteractWithWatercan();
