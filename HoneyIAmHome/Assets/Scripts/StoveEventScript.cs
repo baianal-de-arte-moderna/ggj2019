@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StoveEventScript : ObjectEventScript
 {
+    public Animator fireAnimator;
     public AudioSource ASource;
 
     protected override void OnGameOver()
@@ -13,13 +14,13 @@ public class StoveEventScript : ObjectEventScript
 
     protected override void OnIssueSolved()
     {
-        Debug.Log("Stove under control!");
+        fireAnimator.SetInteger("level", 0);
         ASource.Stop();
     }
 
     protected override void OnLevelUp(int level)
     {
-        Debug.Log("Level Up!");
+        fireAnimator.SetInteger("level", level);
         ASource.Play();
     }
 }

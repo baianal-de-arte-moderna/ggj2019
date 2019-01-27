@@ -40,4 +40,14 @@ public abstract class ObjectGrabbingScript : MonoBehaviour
     }
 
     abstract public void InteractWith(ObjectInteractionScript interactableObject);
+
+    public virtual void OnInteractionStart()
+    {
+        // Do nothing!
+    }
+
+    public virtual void OnInteractionEnd()
+    {
+        // Do nothing!
+    }
 }

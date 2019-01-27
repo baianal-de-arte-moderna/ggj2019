@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SinkEventScript : ObjectEventScript
 {
+    public Animator waterAnimator;
+
     protected override void OnGameOver()
     {
         Debug.Log("Game Over :c");
@@ -11,11 +13,11 @@ public class SinkEventScript : ObjectEventScript
 
     protected override void OnIssueSolved()
     {
-        Debug.Log("The sink is no longer leaking!");
+        waterAnimator.SetInteger("level", 0);
     }
 
     protected override void OnLevelUp(int level)
     {
-        Debug.Log("level up!");
+        waterAnimator.SetInteger("level", level);
     }
 }

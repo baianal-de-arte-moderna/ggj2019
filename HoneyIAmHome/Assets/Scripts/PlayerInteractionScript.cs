@@ -9,14 +9,29 @@ public class PlayerInteractionScript : MonoBehaviour
 
     private ObjectInteractionScript nearestInteractableObject;
 
+    private bool isInteracting;
+
     private void Update()
     {
         if (Input.anyKeyDown && Input.GetAxis("Grab") > 0f)
         {
             OnGrabPressed();
         }
+        else if (isInteracting)
+        {
+            if (Input.GetAxis("Interact") <= 0f)
+            {
+                isInteracting = false;
+                OnInteractReleased();
+            }
+            else
+            {
+                OnInteractContinued();
+            }
+        }
         else if (Input.GetAxis("Interact") > 0f)
         {
+            isInteracting = true;
             OnInteractPressed();
         }
     }
@@ -37,16 +52,33 @@ public class PlayerInteractionScript : MonoBehaviour
 
     private void OnInteractPressed()
     {
-        if (nearestInteractableObject != null)
+        if (grabbedObject != null)
         {
-            if (grabbedObject == null)
-            {
-                nearestInteractableObject.InteractByItself();
-            }
-            else
+            grabbedObject.OnInteractionStart();
+            if (nearestInteractableObject != null)
             {
                 grabbedObject.InteractWith(nearestInteractableObject);
             }
+        }
+        else if (nearestInteractableObject != null)
+        {
+            nearestInteractableObject.InteractByItself();
+        }
+    }
+
+    private void OnInteractReleased()
+    {
+        if (grabbedObject != null)
+        {
+            grabbedObject.OnInteractionEnd();
+        }
+    }
+
+    private void OnInteractContinued()
+    {
+        if (grabbedObject != null && nearestInteractableObject != null)
+        {
+            grabbedObject.InteractWith(nearestInteractableObject);
         }
     }
 
