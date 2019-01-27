@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class HouseManagerScript : MonoBehaviour
 {
@@ -55,6 +56,11 @@ public class HouseManagerScript : MonoBehaviour
                 ActivateAppliances();
             }
         }
+    }
+
+    public int GetCurrentThreatLevel() 
+    {
+        return applianceEventScripts.Min(applianceEventScript => applianceEventScript.maxLevel - applianceEventScript.level);
     }
 
     private void ActivateIdleMode()
