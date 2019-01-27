@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public abstract class ObjectInteractionScript : MonoBehaviour
@@ -31,7 +31,7 @@ public abstract class ObjectInteractionScript : MonoBehaviour
     
     abstract public void InteractWithFireExtinguisher();
 
-    abstract public void InteractWithIrrigator();
+    abstract public void InteractWithWatercan();
 
     abstract public void InteractWithToolbox();
 }

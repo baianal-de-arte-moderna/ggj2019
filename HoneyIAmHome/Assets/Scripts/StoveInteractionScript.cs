@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ public class StoveInteractionScript : ObjectInteractionScript
         SolveIssue();
     }
 
-    public override void InteractWithIrrigator()
+    public override void InteractWithWatercan()
     {
         Debug.Log("Interacting with the stove with the irrigator!");
     }
