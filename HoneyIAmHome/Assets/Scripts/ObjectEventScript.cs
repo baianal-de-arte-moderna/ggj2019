@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,11 +35,6 @@ public abstract class ObjectEventScript : MonoBehaviour
                 OnGameOver();
             }
         }
-    }
-
-    public bool IsActive()
-    {
-        return timer > 0;
     }
 
     public void SetLevelDuration(float newLevelDuration)

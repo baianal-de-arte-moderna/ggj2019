@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,44 +7,52 @@ public class HouseManagerScript : MonoBehaviour
 {
     public List<GameObject> appliances;
 
-    private int level;
-    private float timer;
-
     private List<ObjectEventScript> applianceEventScripts;
-    private List<ObjectEventScript> activeApplianceEventScripts;
     private System.Random random;
+
+    private int level;
+    private float activeTimer;
+    private float idleTimer;
 
     private void Start()
     {
-        level = 0;
-        timer = 0;
         applianceEventScripts = appliances.ConvertAll(appliance => appliance.GetComponentInChildren<ObjectEventScript>());
-        activeApplianceEventScripts = new List<ObjectEventScript>();
         random = new System.Random();
+        level = 0;
+        activeTimer = 0;
+        idleTimer = 0;
+
+        ActivateIdleMode();
     }
 
     private void Update()
     {
-        if (activeApplianceEventScripts.Count > 0)
+        if (activeTimer > 0)
         {
-            activeApplianceEventScripts = activeApplianceEventScripts.FindAll(activeApplianceEventScript => activeApplianceEventScript.IsActive());
-            if (activeApplianceEventScripts.Count == 0)
+            activeTimer -= Time.deltaTime;
+            if (activeTimer <= 0)
             {
                 if (level < appliances.Count)
                 {
                     level++;
                 }
-                timer = random.Next(5, 25);
+                idleTimer = random.Next(5, 25);
             }
         }
         else
         {
-            timer -= Time.deltaTime;
-            if (timer <= 0f)
+            idleTimer -= Time.deltaTime;
+            if (idleTimer <= 0)
             {
                 ActivateAppliances();
             }
         }
+    }
+
+    private void ActivateIdleMode()
+    {
+        idleTimer = random.Next(5, 25);
+        Debug.Log($"Stay in idle mode for {idleTimer} seconds");
     }
 
     private void ActivateAppliances()
@@ -65,7 +73,10 @@ public class HouseManagerScript : MonoBehaviour
         {
             float randomLevelDuration = random.Next(5, 25);
             selectedApplianceEventScript.SetLevelDuration(randomLevelDuration);
-            activeApplianceEventScripts.Add(selectedApplianceEventScript);
+
+            activeTimer = Math.Max(activeTimer, selectedApplianceEventScript.maxLevel * randomLevelDuration);
         }
+
+        Debug.Log($"Stay in active mode for {activeTimer} seconds");
     }
 }
