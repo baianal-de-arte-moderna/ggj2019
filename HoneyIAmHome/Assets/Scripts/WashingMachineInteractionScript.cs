@@ -14,6 +14,11 @@ public class WashingMachineInteractionScript : ObjectInteractionScript
         Debug.Log("Interacting with the washing machine with the fire extinguisher!");
     }
 
+    public override void InteractWithIrrigator()
+    {
+        Debug.Log("Interacting with the washing machine with the irrigator!");
+    }
+
     public override void InteractWithToolbox()
     {
         SolveIssue();

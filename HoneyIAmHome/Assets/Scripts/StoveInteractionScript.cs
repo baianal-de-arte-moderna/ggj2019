@@ -14,6 +14,11 @@ public class StoveInteractionScript : ObjectInteractionScript
         SolveIssue();
     }
 
+    public override void InteractWithIrrigator()
+    {
+        Debug.Log("Interacting with the stove with the irrigator!");
+    }
+
     public override void InteractWithToolbox()
     {
         Debug.Log("Interacting with the stove with the toolbox!");
