@@ -16,6 +16,10 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: e9871e53dd616cd4e82ae3fb4e6b55bf
+    name: FridgeVol
+  - guid: f0843a7ac1e220140b0b8e656ade9616
+    name: MicrowaveVol
   - guid: 0a7bf63596917c7499388004fb3b837c
     name: StoveVol
   - guid: 1bf5520ec5c94aa45a181f139a8ac670
@@ -241,7 +245,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Plant
+  m_Name: Microwave
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 1550c66643ceeb545ac80bb2a923d671
   m_Children: []

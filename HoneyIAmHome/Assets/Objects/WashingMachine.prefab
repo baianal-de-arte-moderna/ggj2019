@@ -121,8 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   maxLevel: 3
-  fixedCover: {fileID: 2798940275509195376}
-  brokenCover: {fileID: 3023485267880013275}
   doorAnimator: {fileID: 2492165587399959405}
   Normal: {fileID: 8300000, guid: f631e41c9b647d848abdad38d597fb0a, type: 3}
   Broken: {fileID: 8300000, guid: fb850c52d42f3cd4ebabcb84dc5ea76e, type: 3}
