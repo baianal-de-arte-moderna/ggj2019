@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -58,7 +57,7 @@ public class HouseManagerScript : MonoBehaviour
         }
     }
 
-    public int GetCurrentThreatLevel() 
+    public int GetCurrentThreatLevel()
     {
         return applianceEventScripts.Min(applianceEventScript => applianceEventScript.maxLevel - applianceEventScript.level);
     }

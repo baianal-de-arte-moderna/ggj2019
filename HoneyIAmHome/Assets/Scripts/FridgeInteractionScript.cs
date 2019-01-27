@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FridgeInteractionScript : ObjectInteractionScript
 {
     public override void InteractByItself()
     {
-        SolveIssue(); 
+        SolveIssue();
     }
 
     public override void InteractWithFireExtinguisher()
