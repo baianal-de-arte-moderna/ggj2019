@@ -14,6 +14,11 @@ public class FridgeInteractionScript : ObjectInteractionScript
         Debug.Log("Interacting with the frige with the fire extinguisher!");
     }
 
+    public override void InteractWithIrrigator()
+    {
+        Debug.Log("Interacting with the frige with the irrigator!");
+    }
+
     public override void InteractWithToolbox()
     {
         Debug.Log("Interacting with the fridge with the toolbox!");

@@ -14,6 +14,11 @@ public class MicrowaveInteractionScript : ObjectInteractionScript
         SolveIssue();
     }
 
+    public override void InteractWithIrrigator()
+    {
+        Debug.Log("Interacting with the microwave with the irrigator!");
+    }
+
     public override void InteractWithToolbox()
     {
         Debug.Log("Interacting with the microwave with the toolbox!");

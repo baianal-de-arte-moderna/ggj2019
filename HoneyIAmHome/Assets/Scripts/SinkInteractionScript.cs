@@ -14,6 +14,11 @@ public class SinkInteractionScript : ObjectInteractionScript
         Debug.Log("Interacting with the sink with the fire extinguisher!");
     }
 
+    public override void InteractWithIrrigator()
+    {
+        Debug.Log("Interacting with the sink with the irrigator!");
+    }
+
     public override void InteractWithToolbox()
     {
         SolveIssue();

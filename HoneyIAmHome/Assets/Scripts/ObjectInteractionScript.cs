@@ -31,5 +31,7 @@ public abstract class ObjectInteractionScript : MonoBehaviour
     
     abstract public void InteractWithFireExtinguisher();
 
+    abstract public void InteractWithIrrigator();
+
     abstract public void InteractWithToolbox();
 }
