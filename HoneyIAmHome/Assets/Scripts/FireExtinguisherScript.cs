@@ -13,12 +13,14 @@ public class FireExtinguisherScript : ObjectGrabbingScript
 
     public override void OnInteractionStart()
     {
+        base.OnInteractionStart();
         Debug.Log("Start foaming!");
         foam.Play();
     }
 
     public override void OnInteractionEnd()
     {
+        base.OnInteractionEnd();
         Debug.Log("Stop foaming!");
         foam.Stop();
     }
