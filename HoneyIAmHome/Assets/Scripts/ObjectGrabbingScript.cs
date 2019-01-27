@@ -2,11 +2,18 @@ using UnityEngine;
 
 public abstract class ObjectGrabbingScript : MonoBehaviour
 {
-    FixedJoint joint;
+    private new Rigidbody rigidbody;
+    private Transform rootTransform;
 
-    void Start()
+    private void Start()
     {
-        this.joint = null;
+        rigidbody = GetComponent<Rigidbody>();
+
+        rootTransform = transform.parent;
+        while (rootTransform.parent != null)
+        {
+            rootTransform = rootTransform.parent;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,18 +34,20 @@ public abstract class ObjectGrabbingScript : MonoBehaviour
         }
     }
 
-    public void AttachTo(Rigidbody r)
+    public void AttachTo(Rigidbody otherRigidBody)
     {
-        if (r == null)
+
+        if (otherRigidBody == null)
         {
-            Destroy(this.joint);
-            this.joint = null;
+            rigidbody.isKinematic = false;
+            rigidbody.useGravity = true;
+            rootTransform.parent = null;
         }
         else
         {
-            this.joint = gameObject.AddComponent<FixedJoint>();
-            this.joint.connectedMassScale = 0.15f;
-            this.joint.connectedBody = r;
+            rigidbody.isKinematic = true;
+            rigidbody.useGravity = false;
+            rootTransform.parent = otherRigidBody.transform;
         }
     }
 
