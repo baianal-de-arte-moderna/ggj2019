@@ -59,3 +59,7 @@ source: https://freesound.org/people/Slooshie_96/sounds/408841/
 toolbox.ogg
 author: YourFriendJesse
 source: https://freesound.org/people/YourFriendJesse/sounds/131200/
+
+football_kick.ogg
+author: dersuperanton
+source: https://freesound.org/people/dersuperanton/sounds/433722/
