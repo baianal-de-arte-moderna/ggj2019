@@ -5,7 +5,7 @@ using UnityEngine;
 public class WashingMachineEventScript : ObjectEventScript
 {
     public Animator doorAnimator;
-    
+
     [Header("Audio Clips")]
     public AudioClip Normal;
     public AudioClip Broken;

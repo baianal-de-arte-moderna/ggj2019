@@ -20,8 +20,6 @@ public class FridgeEventScript : ObjectEventScript
     {
         switch (level)
         {
-            case 0:
-                break;
             case 1:
                 doorAnimator.SetBool("isBroken", true);
                 break;

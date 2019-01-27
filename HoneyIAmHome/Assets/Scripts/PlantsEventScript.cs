@@ -14,7 +14,8 @@ public class PlantsEventScript : ObjectEventScript
         Debug.Log("The plant is alive!");
     }
 
-    protected override void OnLevelUp(int level){
+    protected override void OnLevelUp(int level)
+    {
         Debug.Log("level up!");
     }
 }
